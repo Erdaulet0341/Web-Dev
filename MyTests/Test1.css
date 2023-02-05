@@ -1,0 +1,52 @@
+h1 {
+    color: cornflowerblue;
+    border-bottom: 25px solid peru;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+#youtube {
+    margin: 30px;
+    width: 400px;
+}
+
+#insta {
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+}
+
+#whats {
+    width: 350px;
+    position: relative;
+    right: 60px;
+}
+
+
+a.youtubeLink {
+    color: rgb(210, 13, 13);
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    right: 330px;
+    top: 25px;
+}
+
+a.instaLink {
+    color: rgb(244, 65, 187);
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    right: 240px;
+    top: 25px;
+}
+
+a.whatsLink {
+    color: green;
+    margin-left: 1170px;
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    bottom: 30px
+}
