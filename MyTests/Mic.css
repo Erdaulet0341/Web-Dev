@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+}
+
+.top{
+    width: 100%;
+}
+
+
+
+.top button{
+    border: none;
+    background-color: #fff;
+}
+
+.top a{
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+}
+
+.right{
+    margin-left: 50px;
+    text-align: left;
+    float: left;
+}
+
+.left{
+    margin-right: 100px;
+    text-align: right;
+}
+
+.middle {
+    width: 100%;
+    background: url('img copy/micBackgr.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 530px;
+}
