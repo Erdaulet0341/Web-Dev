@@ -24,7 +24,6 @@ function showMessages() {
             <input type='checkbox' id=item_${i}>
             <label for=item_${i}>${item.Input}</label>
             <button class="delButton buttons"><img src="img/urn.png" alt="urn"></button>
-            </div></button>
         </li>
         `;
     Input.innerHTML = temp;
