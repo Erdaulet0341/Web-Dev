@@ -35,15 +35,33 @@ function showList() {
     checkBox.type = "checkbox";
     li.appendChild(checkBox);
 
+    if (item.check) {
+      li.style.textDecoration = "line-through";
+      checkBox.checked = true
+    } else {
+      li.style.textDecoration = "none";
+    }
 
-    if(item.check){
+    console.log(item.check)
+
+
+
+    checkBox.addEventListener("click", function () {
+      if (checkBox.checked) {
         li.style.textDecoration = "line-through";
-        checkBox.checked =item.check
-    }
-    else{
-        checkBox.checked = !item.check
+      } else {
         li.style.textDecoration = "none";
-    }
+      }
+      console.log("item.check= " + item.check)
+      console.log("checkbox.checked = " + checkBox.checked)
+      list.forEach(function(item2){
+          if(item2.value = item.value){
+              item.check = checkBox.checked
+          }
+      });
+      localStorage.setItem("lists", JSON.stringify(list));
+    });
+    
 
     img.src = "img/urn.png";
     bntDel.className = "bntDel";
@@ -79,13 +97,12 @@ function createAndDelete(temp) {
     } else {
       li.style.textDecoration = "none";
     }
-    list.forEach(function(item){
-        if(item.value = temp.value){
-            item.check = checkBox.checked
-        }
-    });
-    console.log(list)
-    localStorage.setItem("lists", JSON.stringify(list));
+    // list.forEach(function(item){
+    //     if(item.value = temp.value){
+    //         item.check = checkBox.checked
+    //     }
+    // });
+    //localStorage.setItem("lists", JSON.stringify(list));
   });
   
   checkBox.className = "check";
