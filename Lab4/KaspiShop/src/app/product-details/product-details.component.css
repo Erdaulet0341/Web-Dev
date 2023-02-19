@@ -1,0 +1,82 @@
+*{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#fH1{
+  margin-top: 50px;
+  font-size: 2em;
+}
+
+/* .details h3{
+  position: relative;
+  top: 80px;
+  right: 250px;
+  font-size: 1.5em;
+} */
+
+.details {
+  text-align: left;
+  line-height: 35px;
+}
+
+img
+{
+  float: left;
+  width: 600px;
+}
+
+.detailsss{
+  margin-right: 10px;
+  float: left;
+  width: 300px;
+  height: 450px;
+  margin-top: 60px;
+}
+
+.detailsss p{
+  margin-top: 30px;
+}
+
+#shar{
+  position: relative;
+  background-color: white;
+  top: 529px;
+  right: 350px;
+  border: none;
+  font-size: 1.6em;
+}
+
+
+.details .aaa{
+  position: relative;
+  background-color: white;
+  top: 520px;
+  right: 140px;
+  border: none;
+  color: rgb(73, 148, 238);
+  font-size: 1.6em;
+}
+
+.details .aaa:hover{
+  cursor: pointer;
+}
+.shareTele {
+  margin-top: 8px;
+  margin-right: 20px;
+  background-color: white;
+  width: 40px;
+}
+.shareWhat {
+  background-color: white;
+  width: 55px;
+}
+
+
+.detailsss .kaspi{
+  text-decoration: none;
+}
+.detailsss .kaspi:hover{
+  background-color: black;
+  color: white;
+}
