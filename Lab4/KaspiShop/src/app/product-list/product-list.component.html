@@ -1,10 +1,18 @@
 <div class="main">
-  <h2>Products</h2>
+  <h1>Top products</h1>
   <div class="container" *ngFor="let item of products">
     <h3>
-      <a [title]="item.name + ' details'" [routerLink]="['/products', item.id]">{{item.name}}</a>
-      <span> Price = {{item.price}} tenge</span>
+      <a [title]="item.name + ' details'" [routerLink]="['/product', item.id]">{{item.name}}</a>
+      <span> price = {{item.price}} tenge</span>
     </h3>
   </div>
-  <img src="assets/leftSide.png" alt="">
+</div>
+
+<div class="sort">
+  <p><a title="Only phones" [routerLink]="['/products', products[0].sortType]">Phones</a></p>
+  <img id="laptop" src="assets/morePhones.jpeg  " alt="laptops">
+  <p><a title="Only laptops" [routerLink]="['/products', products[4].sortType]">Laptops</a></p>
+  <img id="phone" src="assets/moreLaptop.png" alt="laptops">
+  <p><a title="Only households" [routerLink]="['/products', products[11].sortType]">Households</a></p>
+  <img src="assets/holdhouse.jpg" alt="Households">
 </div>

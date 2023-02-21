@@ -7,7 +7,8 @@ export interface Product{
   price: number,
   memory: number,
   color: string,
-  kaspiLink:string
+  kaspiLink:string,
+  sortType:string
 }
 
 export const products = [
@@ -20,7 +21,8 @@ export const products = [
     price: 380000,
     memory: 256,
     color: "purple",
-    kaspiLink: "https://kaspi.kz/shop/p/apple-iphone-12-128gb-fioletovyi-101395751/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/apple-iphone-12-128gb-fioletovyi-101395751/?c=750000000#!/item",
+    sortType: "phone"
   },
   {
     id: 2,
@@ -31,7 +33,8 @@ export const products = [
     price: 164990,
     memory: 64,
     color: "black",
-    kaspiLink: "https://kaspi.kz/shop/p/samsung-galaxy-a51-6-gb-128-gb-chernyi-100068493/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/samsung-galaxy-a51-6-gb-128-gb-chernyi-100068493/?c=750000000#!/item",
+    sortType: "phone"
   },
   {
     id: 3,
@@ -42,7 +45,8 @@ export const products = [
     price: 163990,
     memory: 128,
     color: "purple",
-    kaspiLink: "https://kaspi.kz/shop/p/oppo-reno-7-8-gb-128-gb-oranzhevyi-104705825/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/oppo-reno-7-8-gb-128-gb-oranzhevyi-104705825/?c=750000000#!/item",
+    sortType: "phone"
   },
   {
     id: 10,
@@ -53,7 +57,8 @@ export const products = [
     price: 164990,
     memory: 256,
     color: "green",
-    kaspiLink: "https://kaspi.kz/shop/p/lenovo-ideapad-3-15itl6-82h8005grk-serebristyi-108090705/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/lenovo-ideapad-3-15itl6-82h8005grk-serebristyi-108090705/?c=750000000#!/item",
+    sortType: "laptop"
   },
   {
     id: 4,
@@ -64,7 +69,8 @@ export const products = [
     price: 993990,
     memory: 512,
     color: "green",
-    kaspiLink: "https://kaspi.kz/shop/p/apple-macbook-pro-14-mkgp3-seryi-102866247/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/apple-macbook-pro-14-mkgp3-seryi-102866247/?c=750000000#!/item",
+    sortType: "laptop"
   },
   {
     id: 5,
@@ -75,7 +81,8 @@ export const products = [
     price: 419990,
     memory: 512,
     color: "black",
-    kaspiLink: "https://kaspi.kz/shop/p/asus-rog-strix-g15-g513ih-90nr07p2-m00160-seryi-101686597/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/asus-rog-strix-g15-g513ih-90nr07p2-m00160-seryi-101686597/?c=750000000#!/item",
+    sortType: "laptop"
   },
   {
     id: 6,
@@ -86,7 +93,8 @@ export const products = [
     price: 559990,
     memory: 512,
     color: "black",
-    kaspiLink: "https://kaspi.kz/shop/p/acer-nitro-5-an515-45-nh-qbcer-005-chernyi-106111779/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/acer-nitro-5-an515-45-nh-qbcer-005-chernyi-106111779/?c=750000000#!/item",
+    sortType: "laptop"
   },
   {
     id: 7,
@@ -97,7 +105,8 @@ export const products = [
     price: 128990,
     memory: 256,
     color: "red",
-    kaspiLink: "https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000#!/item",
+    sortType: "phone"
   },
   {
     id: 8,
@@ -108,7 +117,8 @@ export const products = [
     price: 319990,
     memory: 32,
     color: "black",
-    kaspiLink: "https://kaspi.kz/shop/p/vivo-v25-pro-12-gb-256-gb-chernyi-106708277/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/vivo-v25-pro-12-gb-256-gb-chernyi-106708277/?c=750000000#!/item",
+    sortType: "phone"
   },
   {
     id: 9,
@@ -119,7 +129,56 @@ export const products = [
     price: 29890,
     memory: 8,
     color: "white",
-    kaspiLink: "https://kaspi.kz/shop/p/nokia-6300-ds-belyi-100875450/?c=750000000#!/item"
+    kaspiLink: "https://kaspi.kz/shop/p/nokia-6300-ds-belyi-100875450/?c=750000000#!/item",
+    sortType: "phone"
+  },
+  {
+    id: 11,
+    name: "Electric kettle",
+    description: "Fully unlocked and compatible with any carrier of choice (e.g. AT&T, T-Mobile, Sprint, Verizon, US-Cellular, Cricket, Metro, etc.). Tested for battery health and guaranteed to have a minimum battery capacity of 80%.",
+    rating: 4.4,
+    images: 11,
+    price: 6000,
+    memory: 1.7,
+    color: "white",
+    kaspiLink: "https://kaspi.kz/shop/p/elektrochainik-monte-mt-1815g-belyi-108488533/?c=750000000#!/item",
+    sortType: "household"
+  },
+  {
+    id: 12,
+    name: "Fridge KBC 390",
+    description: "Fully unlocked and compatible with any carrier of choice (e.g. AT&T, T-Mobile, Sprint, Verizon, US-Cellular, Cricket, Metro, etc.). Tested for battery health and guaranteed to have a minimum battery capacity of 80%.",
+    rating: 3.8,
+    images: 12,
+    price: 224900,
+    memory: 2.9,
+    color: "green",
+    kaspiLink: "https://kaspi.kz/shop/p/kleo-kbc-390-chb-belyi-104970651/?c=750000000#!/item",
+    sortType: "household"
+  },
+  {
+    id: 13,
+    name: "Microwave ARG MS-20",
+    description: "Fully unlocked and compatible with any carrier of choice (e.g. AT&T, T-Mobile, Sprint, Verizon, US-Cellular, Cricket, Metro, etc.). Tested for battery health and guaranteed to have a minimum battery capacity of 80%.",
+    rating: 4.5,
+    images: 13,
+    price: 34425,
+    memory: 4.7,
+    color: "black",
+    kaspiLink: "https://kaspi.kz/shop/p/arg-ms-2021m-chernyi-2900958/?c=750000000#!/item",
+    sortType: "household"
+  },
+  {
+    id: 14,
+    name: "Waffle iron DASH",
+    description: "Fully unlocked and compatible with any carrier of choice (e.g. AT&T, T-Mobile, Sprint, Verizon, US-Cellular, Cricket, Metro, etc.). Tested for battery health and guaranteed to have a minimum battery capacity of 80%.",
+    rating: 2.5,
+    images: 14,
+    price: 34425,
+    memory: 1.2,
+    color: "red",
+    kaspiLink: "https://kaspi.kz/shop/p/vafel-nitsa-dash-f-607-krasnyi-102531842/?c=750000000#!/item",
+    sortType: "household"
   }
 
 ]

@@ -1,9 +1,14 @@
 .main{
-  margin-top: 30px;
+  margin-top: 50px;
   line-height: 50px;
+  /* background-color: aquamarine; */
+  width: 450px;
+  float: left;
 }
 
-
+.main h1{
+  margin-bottom: 13px;
+}
 
 a{
   text-decoration: none;
@@ -11,7 +16,7 @@ a{
 }
 a:hover{
   color: white;
-  background-color: black;
+  background-color: rgb(242, 51, 51);
 }
 span{
   margin-left: 20px;
@@ -23,9 +28,25 @@ span{
   text-align: right;
 }
 
-.main img{
-  width: 750px;
-  margin-left: 450px;
-  position: relative;
-  bottom: 550px;
+.sort{
+  margin-left: 500px;
+  /* background-color: rgb(216, 129, 16); */
+}
+
+.sort a{
+  margin-left: 230px;
+  font-size: 1.7em;
+}
+
+.sort a:hover{
+  border-radius: 7px;
+}
+
+#laptop, #phone{
+  margin-bottom: 45px;
+}
+
+
+.sort img{
+  width: 500px;
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products, Product} from '../products'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-product-details',
@@ -15,8 +14,6 @@ export class ProductDetailsComponent {
     this.img = '';
   }
 
-  twitter = faTwitter
-
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
@@ -24,7 +21,8 @@ export class ProductDetailsComponent {
     this.img = "assets/" + this.product?.id + ".jpg";
   }
 
-  shareClick(){
-    
+  shareClick(link:string, name:string){
+    console.log(link)
+    window.open(`https://telegram.me/share/url?url=${link}&text=${name}`)
   }
 }

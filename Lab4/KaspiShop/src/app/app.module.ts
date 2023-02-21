@@ -11,10 +11,12 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ByUsingComponent } from './by-using/by-using.component';
 
 const routes: Routes = [
   {path: '', component: ProductListComponent},
-  {path: 'products/:productId', component: ProductDetailsComponent},
+  {path: 'product/:productId', component: ProductDetailsComponent},
+  {path: 'products/:productSortType', component: ByUsingComponent},
 ]
 
 @NgModule({
@@ -22,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ByUsingComponent
   ],
   imports: [
     BrowserModule,

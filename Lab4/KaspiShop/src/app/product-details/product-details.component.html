@@ -12,7 +12,6 @@
     <p>{{ product.description }}</p>
   </div>
   <span id="shar">Share: </span>
-  <a class="aaa" target=”_blank” href="https://web.telegram.org/k/"><img class="shareTele" src="assets/teleLogo.png" alt="telegram"></a>
-  <a class="aaa" target=”_blank” href="https://web.whatsapp.com/"><img class="shareWhat" src="assets/whatsLogo.png" alt="whats"></a>
+  <button (click)="shareClick(product.kaspiLink, product.name)" ><img id="shareB" src="assets/teleLogo.png" alt="tel2"></button>
 </div>
 <span></span>
