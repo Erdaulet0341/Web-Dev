@@ -37,6 +37,14 @@ body{
   background: blueviolet;
 }
 
-@media screen and (max_width:1200 ){
-
+@media screen and (max-width:1200px){
+  .main{
+    width: 100%;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
 }

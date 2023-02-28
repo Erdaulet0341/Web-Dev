@@ -1,0 +1,17 @@
+<h3 id="fH1">Product Details</h3>
+
+<div class="details" *ngIf="product">
+  <img src="{{img}}" alt="tel" >
+  <div class="detailsss">
+    <h3>{{ product.name }}</h3>
+    <h4>Price : {{ product.price}} tenge</h4>
+    <h4>Color : {{ product.color}} </h4>
+    <h4>Rating : {{ product.rating}} </h4>
+    <h4>Memory : {{ product.memory}}GB </h4>
+    <h4><a class="kaspi" target=”_blank” href="{{product.kaspiLink}}"> Link to KaspiKz</a></h4>
+    <p>{{ product.description }}</p>
+  </div>
+  <span id="shar">Share: </span>
+  <button (click)="shareClick(product.kaspiLink, product.name)" ><img id="shareB" src="assets/teleLogo.png" alt="tel2"></button>
+</div>
+<span></span>
