@@ -1,3 +1,8 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+
 <h3 id="fH1">Product Details</h3>
 
 <div class="details" *ngIf="product">
@@ -12,6 +17,10 @@
     <p>{{ product.description }}</p>
   </div>
   <span id="shar">Share: </span>
-  <button (click)="shareClick(product.kaspiLink, product.name)" ><img id="shareB" src="assets/teleLogo.png" alt="tel2"></button>
+  <button id="share" (click)="shareClick(product.kaspiLink, product.name)" ><img id="shareImg" src="assets/teleLogo.png" alt="tel2"></button>
+  <div id="likes">
+    <button  id="likeButton" (click)="likeFun(product.like)"><i id="like" class="material-icons md-48"> thumb_up </i></button><br>
+    <span id="likeCnt">{{product.like}}</span>
+  </div>
 </div>
 <span></span>

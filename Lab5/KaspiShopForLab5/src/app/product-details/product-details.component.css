@@ -41,26 +41,51 @@ img {
   position: relative;
   background-color: white;
   top: 510px;
-  right: 300px;
+  right: 155px;
   border: none;
   font-size: 1.6em;
 }
 
-.details button {
+.details #share {
   position: relative;
   background-color: white;
-  top: 530px;
-  right: 290px;
+  top: 526px;
+  right: 150px;
   border: none;
-  color: rgb(73, 148, 238);
   font-size: 1.6em;
 }
 
-.details #shareB{
+#likeButton{
+  border: none;
+  background: none;
+}
+
+#like{
+  font-size: 50px;
+}
+
+#likes{
+  position: relative;
+  top: 460px;
+  right: 480px;
+}
+#likes span{
+  position: relative;
+  bottom: 20px;
+}
+
+#like:hover{
+  color: rgb(0, 132, 255);
+}
+#like:checked{
+  color: rgb(0, 255, 30);
+}
+
+.details #shareImg{
   width: 50px;
 }
 
-.details button:hover {
+.details #share:hover {
   cursor: pointer;
   background-color: rgb(0, 145, 255);
 }

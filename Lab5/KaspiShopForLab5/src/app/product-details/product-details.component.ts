@@ -10,8 +10,10 @@ import { products, Product} from '../products'
 export class ProductDetailsComponent {
   product: Product | undefined;
   img:string;
+  likeNum:number
   constructor(private route: ActivatedRoute) {
     this.img = '';
+    this.likeNum = 0;
   }
 
   ngOnInit() {
@@ -24,5 +26,9 @@ export class ProductDetailsComponent {
   shareClick(link:string, name:string){
     console.log(link)
     window.open(`https://telegram.me/share/url?url=${link}&text=${name}`)
+  }
+  likeFun(like:number){
+    let likeCnt = document.querySelector("#likeCnt")
+    let likeimg = document.getElementById("like")
   }
 }
