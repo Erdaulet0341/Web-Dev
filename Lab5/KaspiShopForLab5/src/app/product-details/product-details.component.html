@@ -5,7 +5,7 @@
 
 <h3 id="fH1">Product Details</h3>
 
-<div class="details" *ngIf="product">
+<div id="details" *ngIf="product">
   <img src="{{img}}" alt="tel" >
   <div class="detailsss">
     <h3>{{ product.name }}</h3>
@@ -22,5 +22,6 @@
     <button  id="likeButton" (click)="likeFun(product.like)"><i id="like" class="material-icons md-48"> thumb_up </i></button><br>
     <span id="likeCnt">{{product.like}}</span>
   </div>
+  <button (click)="delete(product.id)" routerLink="/"  id="removeBtn">remove product</button>
 </div>
 <span></span>

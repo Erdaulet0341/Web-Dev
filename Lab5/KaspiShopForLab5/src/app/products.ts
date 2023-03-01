@@ -326,5 +326,4 @@ export const products = [
     sortType: "autoPr",
     like:628
   }
-
 ]

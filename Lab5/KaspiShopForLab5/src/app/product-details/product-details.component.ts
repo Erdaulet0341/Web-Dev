@@ -27,8 +27,41 @@ export class ProductDetailsComponent {
     console.log(link)
     window.open(`https://telegram.me/share/url?url=${link}&text=${name}`)
   }
+  check:Boolean = true
   likeFun(like:number){
-    let likeCnt = document.querySelector("#likeCnt")
+    let likeCnt = document.getElementById("likeCnt")
     let likeimg = document.getElementById("like")
+    // let cnt:number = parseInt(likeCnt.innerText)+1
+    // console.log("first "+this.check);
+    if(likeCnt != null && likeimg!= null && this.check == true){
+      let cnt:number = parseInt(likeCnt.innerText)+1
+      console.log(cnt)
+      likeimg.style.color = 'rgb(0, 145, 255)'
+      likeCnt.innerHTML = cnt.toString()
+      this.check = false
+    }
+    else if(likeCnt != null && likeimg!= null && this.check == false){
+      let cnt:number = parseInt(likeCnt.innerText)-1;
+      likeimg.style.color = 'black'
+      this.check = true
+      likeCnt.innerHTML = cnt.toString()
+    }
+    // console.log("second "+this.check);
+  }
+
+  delete(id: number){
+    const el = document.getElementById('details');
+    if(el!= null){
+      el.style.display = 'none'
+    }
+    console.log(products)
+    products.forEach((item, index) => {
+
+      if(item.id === id){
+        products.splice(index, 1)
+        console.log(products)
+      }
+    });
+
   }
 }
