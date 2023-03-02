@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background: rgb(242, 209, 172);
+  box-sizing: border-box;
 }
 
 .main-img{
