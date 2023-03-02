@@ -28,6 +28,8 @@ export class ProductDetailsComponent {
     window.open(`https://telegram.me/share/url?url=${link}&text=${name}`)
   }
   check:Boolean = true
+
+  
   likeFun(like:number){
     let likeCnt = document.getElementById("likeCnt")
     let likeimg = document.getElementById("like")
