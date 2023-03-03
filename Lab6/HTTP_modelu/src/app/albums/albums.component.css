@@ -1,0 +1,42 @@
+.main{
+  max-width: 1600px;
+}
+
+.albums{
+}
+
+.items{
+  padding-left: 4px;
+  width: 65px;
+  float: left;
+  margin-left: 7.5px;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+
+.items a{
+  color: black;
+  text-decoration: none;
+}
+.items a:hover{
+  color: white;
+  font-weight: bold;
+}
+
+.items:hover {
+  background: rgb(120, 120, 120);
+}
+
+.items button{
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.items button:hover{
+  background: rgb(14, 255, 14);
+  border: none;
+  color: white;
+  font-weight: bold;
+}

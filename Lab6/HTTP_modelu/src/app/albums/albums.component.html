@@ -1,1 +1,13 @@
-<p>albums works!</p>
+<div class="main">
+  <div class="albums">
+    <div class="items" *ngFor="let item of albums">
+      <div class="items2">
+        <a [routerLink]="['/albums', item.id]">
+          <p>id={{item.id}}</p>
+          <p>userId={{item.userId}}</p>
+        </a>
+        <button (click)="deleteAlbume(item)">delete</button>
+      </div>
+    </div>
+  </div>
+</div>
