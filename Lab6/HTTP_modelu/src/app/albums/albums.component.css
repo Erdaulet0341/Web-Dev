@@ -1,16 +1,17 @@
-.main{
-  max-width: 1600px;
-}
 
-.albums{
+
+#main{
+  max-width: 1600px;
+  /* background:  rgb(242, 209, 172); */
 }
 
 .items{
+  line-height: 35px;
   padding-left: 4px;
   width: 65px;
   float: left;
-  margin-left: 7.5px;
-  margin-top: 20px;
+  margin-left: 8px;
+  margin-top: 21px;
   border: 1px solid black;
   padding-bottom: 8px;
   border-radius: 5px;
@@ -39,4 +40,18 @@
   border: none;
   color: white;
   font-weight: bold;
+}
+
+.items2 span{
+  color: rgb(34, 255, 18);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.create{
+  margin-top: 20px;
+  display: flex;
+  margin-left: 10px;
+  gap: 30px;
 }

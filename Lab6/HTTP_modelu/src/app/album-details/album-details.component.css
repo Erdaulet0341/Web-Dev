@@ -7,6 +7,7 @@
 
 .information{
   align-items: center;
+  line-height: 60px;
 }
 
 span{
@@ -20,7 +21,19 @@ span{
 }
 
 .edit input{
+  width: 250px;
   height: 24px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  position: relative;
+  bottom: 5px;
+  font-size: 16px;
+}
+
+edit input:focus{
+  outline: none;
+  border: none;
 }
 
 .edit label{
